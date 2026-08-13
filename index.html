@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtua Technologies | Enterprise RWA Tokenization Platform Development</title>
+  <meta name="description" content="Turn Real-World Assets Into Digital Investment Opportunities. We build enterprise-grade RWA Tokenization Platforms for Real Estate, Hotels, Energy & Funds.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css?v=900000">
+</head>
+<body>
+
+  <!-- Ambient Glow Backgrounds -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-middle"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo-exact">
+        <img src="assets/standalone_logo.png?v=101010" alt="Virtua Logo Icon" class="user-exact-icon-img">
+        <div class="logo-text-exact">
+          <span class="logo-text-top">Virtua</span>
+          <span class="logo-text-bot">technologies</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="#revenue" class="nav-link">Revenue Opportunities</a>
+        <a href="#features" class="nav-link">Platform Features</a>
+        <a href="#process" class="nav-link">How It Works</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </div>
+
+      <button class="btn btn-pill-nav open-modal">
+        <span>Book a Free Strategy Call</span>
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Revenue First Focus) -->
+  <section class="hero-section">
+    <!-- Gold Grid Crosshair Plus Markers (+) -->
+    <div class="grid-cross plus-1">+</div>
+    <div class="grid-cross plus-2">+</div>
+    <div class="grid-cross plus-3">+</div>
+    <div class="grid-cross plus-4">+</div>
+
+    <div class="container hero-container">
+      
+      <h1 class="hero-title">
+        Have a <span class="badge-pill-inline"><span class="highlight-gold">High-Value Asset</span> <span class="pill-icon-gold"><i class="fa-solid fa-lightbulb"></i></span></span> But <br>No Clear Path to Launch & Monetize?
+      </h1>
+      
+      <p class="hero-tagline">
+        Unlock Global Investors. Raise Capital Faster. Create New Revenue Streams.
+      </p>
+
+      <p class="hero-subtitle">
+        We build enterprise-grade RWA Tokenization Platforms for Real Estate, Hotels, Renewable Energy, Infrastructure, Gold, Private Equity, and Other High-Value Assets.
+      </p>
+
+      <!-- Dual Hero CTAs -->
+      <div class="hero-cta-group">
+        <button class="btn btn-pill-primary open-modal">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Schedule a Free Strategy Call</span>
+        </button>
+        <button class="btn btn-pill-secondary open-modal">
+          <i class="fa-solid fa-circle-play"></i>
+          <span>Request a Live Demo</span>
+        </button>
+      </div>
+
+      <!-- Trust Checkmarks Bar -->
+      <div class="hero-trust-bar">
+        <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Enterprise Grade Security</span>
+        <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Smart Contract Development</span>
+        <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Investor Dashboard</span>
+        <span class="trust-item"><i class="fa-solid fa-circle-check"></i> Regulatory Ready Architecture</span>
+        <span class="trust-item"><i class="fa-solid fa-circle-check"></i> End-to-End Platform Development</span>
+      </div>
+
+      <!-- Interactive Platform Mockup Container -->
+      <div class="mockup-frame">
+        <div class="mockup-header-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="mockup-title">Virtua RWA Engine — Live Platform Preview</span>
+        </div>
+        
+        <div class="mockup-content">
+          <div class="preview-screen" id="preview-screen">            <div class="screen-tabs">
+              <button class="tab-btn active" data-view="dashboard"><i class="fa-solid fa-chart-pie"></i> RWA Portfolio Dashboard</button>
+              <button class="tab-btn" data-view="tokenization"><i class="fa-solid fa-wand-magic-sparkles"></i> Asset Minting Calculator</button>
+              <button class="tab-btn" data-view="marketplace"><i class="fa-solid fa-list-ol"></i> Live Order Book</button>
+              <button class="tab-btn" data-view="compliance"><i class="fa-solid fa-shield-halved"></i> ERC-3643 Compliance</button>
+            </div>
+
+            <!-- View 1: RWA Portfolio Dashboard -->
+            <div class="screen-view active" id="view-dashboard">
+              <div class="v-grid">
+                <div class="v-card">
+                  <span class="v-label">Total Value Locked (TVL)</span>
+                  <div class="v-num">$148,500,000 <span class="v-badge">+14.2%</span></div>
+                  <div class="v-bar"><div class="fill" style="width: 88%"></div></div>
+                </div>
+                <div class="v-card">
+                  <span class="v-label">Average Asset Yield</span>
+                  <div class="v-num">9.85% APY <span class="v-badge green">Instant Settle</span></div>
+                  <div class="v-sparkline">
+                    <svg viewBox="0 0 100 25"><path d="M0,20 Q25,5 50,15 T100,2" fill="none" stroke="#F59E0B" stroke-width="2.5"/></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mini Asset Showcase Grid inside Dashboard View -->
+              <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 14px;">
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 12px; border-radius: 10px; text-align: left;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <strong style="font-size: 0.9rem; color: #FFF;">Manhattan Commercial Tower</strong>
+                    <span style="font-size: 0.72rem; color: #10B981; font-weight: 700; background: rgba(16,185,129,0.15); padding: 2px 8px; border-radius: 4px;">Live 🟢</span>
+                  </div>
+                  <div style="font-size: 0.8rem; color: #9CA3AF;">Valuation: <strong style="color: #FFF;">$45,000,000</strong> • Yield: <strong style="color: #F59E0B;">10.4% APY</strong></div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 12px; border-radius: 10px; text-align: left;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                    <strong style="font-size: 0.9rem; color: #FFF;">Zurich 24K Gold Vault</strong>
+                    <span style="font-size: 0.72rem; color: #10B981; font-weight: 700; background: rgba(16,185,129,0.15); padding: 2px 8px; border-radius: 4px;">Live 🟢</span>
+                  </div>
+                  <div style="font-size: 0.8rem; color: #9CA3AF;">Valuation: <strong style="color: #FFF;">$32,500,000</strong> • Yield: <strong style="color: #F59E0B;">7.8% APY</strong></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- View 2: Asset Minting Calculator -->
+            <div class="screen-view" id="view-tokenization">
+              <div class="v-card highlight">
+                <div class="v-status"><i class="fa-solid fa-wand-magic-sparkles"></i> Interactive Smart Contract Mint Simulator</div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 12px 0;">
+                  <div>
+                    <label style="display: block; font-size: 0.72rem; color: #9CA3AF; text-align: left; margin-bottom: 4px;">Asset Valuation ($)</label>
+                    <input type="number" id="simValuation" value="10000000" style="width: 100%; background: rgba(0,0,0,0.4); border: 1px solid rgba(245,158,11,0.3); color: #FFF; padding: 6px 10px; border-radius: 6px; font-size: 0.85rem;">
+                  </div>
+                  <div>
+                    <label style="display: block; font-size: 0.72rem; color: #9CA3AF; text-align: left; margin-bottom: 4px;">Fraction Price ($)</label>
+                    <input type="number" id="simFraction" value="500" style="width: 100%; background: rgba(0,0,0,0.4); border: 1px solid rgba(245,158,11,0.3); color: #FFF; padding: 6px 10px; border-radius: 6px; font-size: 0.85rem;">
+                  </div>
+                  <div>
+                    <label style="display: block; font-size: 0.72rem; color: #9CA3AF; text-align: left; margin-bottom: 4px;">Est. APY Yield</label>
+                    <div style="background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.4); color: #F5A623; padding: 6px 10px; border-radius: 6px; font-weight: 800; font-size: 0.88rem;" id="simApy">9.85% APY</div>
+                  </div>
+                </div>
+
+                <button class="btn btn-pill-primary" id="btnSimulateMint" style="width: 100%; padding: 8px; font-size: 0.85rem; margin-top: 4px;">
+                  <span>Mint ERC-3643 Fractional Token Contract</span>
+                  <i class="fa-solid fa-bolt"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- View 3: Live Order Book -->
+            <div class="screen-view" id="view-marketplace">
+              <div class="v-card">
+                <div class="v-order-row buy"><span>BUY MATCH</span> Manhattan Tower #482 — $502.50 (20 Tokens) <i class="fa-solid fa-check-double"></i></div>
+                <div class="v-order-row buy"><span>BUY MATCH</span> Swiss Gold Vault #109 — $100.20 (150 Tokens) <i class="fa-solid fa-check-double"></i></div>
+                <div class="v-order-row sell"><span>SELL OFFER</span> U.S. T-Bills #992 — $1,001.00 (5 Tokens) <i class="fa-solid fa-clock"></i></div>
+                <div class="v-order-row buy"><span>BUY MATCH</span> Monet Original #304 — $255.00 (40 Tokens) <i class="fa-solid fa-check-double"></i></div>
+              </div>
+            </div>
+
+            <!-- View 4: ERC-3643 Compliance -->
+            <div class="screen-view" id="view-compliance">
+              <div class="v-card">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                  <span style="font-size: 0.85rem; font-weight: 700; color: #10B981;"><i class="fa-solid fa-shield-halved"></i> Institutional Compliance Status: Active</span>
+                  <span style="font-size: 0.72rem; color: #9CA3AF;">Chainlink Valuation Oracle Verified</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: left; font-size: 0.78rem; background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px;">
+                  <div><span style="color: #9CA3AF;">KYC/AML:</span> <strong style="color: #FFF;">Passed 🟢</strong></div>
+                  <div><span style="color: #9CA3AF;">Token Standard:</span> <strong style="color: #F59E0B;">ERC-3643</strong></div>
+                  <div><span style="color: #9CA3AF;">Multi-Sig:</span> <strong style="color: #FFF;">3/5 Signers</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <!-- Supported Blockchain Networks (Ultra-Premium Enterprise Showcase) -->
+    <div class="blockchain-marquee-wrapper">
+      <div class="container">
+        <div class="marquee-header">
+          <span class="marquee-badge-pill"><i class="fa-solid fa-link"></i> MULTI-CHAIN INTEROPERABILITY</span>
+          <h3>Supported Blockchain Networks & Ecosystems</h3>
+          <p class="marquee-subtext">Deploy multi-chain RWA smart contracts seamlessly across EVM, Layer-1, and Layer-2 protocols with institutional-grade security.</p>
+        </div>
+      </div>
+      
+      <div class="marquee-track-outer">
+        <div class="marquee-track-rtl">
+          <!-- First Set -->
+          <div class="marquee-item"><img src="assets/blockchains/ethereum.png?v=100" alt="Ethereum"></div>
+          <div class="marquee-item"><img src="assets/blockchains/polygon.png?v=9999" alt="Polygon"></div>
+          <div class="marquee-item"><img src="assets/blockchains/bnb.png?v=100" alt="BNB Chain"></div>
+          <div class="marquee-item"><img src="assets/blockchains/avalanche.png?v=55555" alt="Avalanche"></div>
+          <div class="marquee-item"><img src="assets/blockchains/solana.png?v=100" alt="Solana"></div>
+          <div class="marquee-item"><img src="assets/blockchains/arbitrum.png?v=100" alt="Arbitrum"></div>
+          <div class="marquee-item"><img src="assets/blockchains/stellar.png?v=100" alt="Stellar"></div>
+          <div class="marquee-item"><img src="assets/blockchains/xrp.png?v=100" alt="XRP Ledger"></div>
+          <div class="marquee-item"><img src="assets/blockchains/base.png?v=100" alt="Base"></div>
+          <div class="marquee-item"><img src="assets/blockchains/hedera.png?v=77777" alt="Hedera Hashgraph"></div>
+          
+          <!-- Duplicate Set for Continuous Loop -->
+          <div class="marquee-item"><img src="assets/blockchains/ethereum.png?v=100" alt="Ethereum"></div>
+          <div class="marquee-item"><img src="assets/blockchains/polygon.png?v=9999" alt="Polygon"></div>
+          <div class="marquee-item"><img src="assets/blockchains/bnb.png?v=100" alt="BNB Chain"></div>
+          <div class="marquee-item"><img src="assets/blockchains/avalanche.png?v=55555" alt="Avalanche"></div>
+          <div class="marquee-item"><img src="assets/blockchains/solana.png?v=100" alt="Solana"></div>
+          <div class="marquee-item"><img src="assets/blockchains/arbitrum.png?v=100" alt="Arbitrum"></div>
+          <div class="marquee-item"><img src="assets/blockchains/stellar.png?v=100" alt="Stellar"></div>
+          <div class="marquee-item"><img src="assets/blockchains/xrp.png?v=100" alt="XRP Ledger"></div>
+          <div class="marquee-item"><img src="assets/blockchains/base.png?v=100" alt="Base"></div>
+          <div class="marquee-item"><img src="assets/blockchains/hedera.png?v=77777" alt="Hedera Hashgraph"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="blockchain-features-pills">
+          <span class="bf-pill"><i class="fa-solid fa-bolt"></i> Sub-Second Settlement</span>
+          <span class="bf-pill"><i class="fa-solid fa-shield-halved"></i> ERC-3643 Compliant</span>
+          <span class="bf-pill"><i class="fa-solid fa-network-wired"></i> Cross-Chain Bridge Ready</span>
+          <span class="bf-pill"><i class="fa-solid fa-lock"></i> Multi-Sig Security</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Virtua RWA Platform Architecture & Dashboard Modules (Side-by-Side Image + Content Showcase) -->
+  <section class="section-container rwa-modules-zigzag-section" id="dashboard-modules" style="padding: 80px 0; background: #070709; border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <div class="container">
+      
+      <div class="section-title text-center" style="margin-bottom: 60px;">
+        <span class="section-pill"><i class="fa-solid fa-layer-group"></i> PLATFORM ARCHITECTURE SHOWCASE</span>
+        <h2 style="font-family: 'Outfit', sans-serif; font-size: 2.3rem; color: #FFF; margin-top: 12px;">Enterprise RWA Engine Suite & Dashboard Modules</h2>
+        <p style="color: #9CA3AF; max-width: 750px; margin: 12px auto 0; font-size: 0.98rem;">Explore the end-to-end institutional tokenization stack built with bank-grade security, automated compliance, and real-time secondary liquidity.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 80px;">
+
+        <!-- Module 1: Image Left, Content Right -->
+        <div class="zigzag-module-row">
+          <div style="position: relative;">
+            <div style="background: linear-gradient(135deg, rgba(245,158,11,0.2), transparent); padding: 4px; border-radius: 20px; border: 1px solid rgba(245,158,11,0.3); box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+              <img src="assets/dashboard/portfolio.jpg" alt="RWA Portfolio Dashboard" style="width: 100%; height: auto; border-radius: 16px; display: block;">
+            </div>
+          </div>
+
+          <div style="text-align: left;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #F5A623; letter-spacing: 1px; text-transform: uppercase; background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.25); padding: 4px 12px; border-radius: 9999px; display: inline-block; margin-bottom: 14px;"><i class="fa-solid fa-chart-pie"></i> PORTFOLIO MANAGEMENT</span>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.85rem; color: #FFF; margin-bottom: 14px;">Institutional RWA Portfolio & Yield Management</h3>
+            <p style="color: #9CA3AF; font-size: 0.98rem; line-height: 1.6; margin-bottom: 20px;">Provide institutional investors and asset managers with real-time portfolio tracking across tokenized real estate, gold reserves, and sovereign debt instruments. Monitors TVL growth curves and automated quarterly yield payouts.</p>
+            
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Real-Time Total Value Locked (TVL) & APY Growth Analytics</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Automated Smart Contract Dividend & Rent Payout Engine</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Multi-Asset Portfolio Balancing & Performance Reporting</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 2: Content Left, Image Right -->
+        <div class="zigzag-module-row">
+          <div style="text-align: left;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #F5A623; letter-spacing: 1px; text-transform: uppercase; background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.25); padding: 4px 12px; border-radius: 9999px; display: inline-block; margin-bottom: 14px;"><i class="fa-solid fa-wand-magic-sparkles"></i> MINTING ENGINE</span>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.85rem; color: #FFF; margin-bottom: 14px;">ERC-3643 Compliant Asset Minting Engine</h3>
+            <p style="color: #9CA3AF; font-size: 0.98rem; line-height: 1.6; margin-bottom: 20px;">Deploy fractional security token smart contracts backed by physical real estate, private credit, and commodities in under 5 minutes. Fully compliant with global identity standards (T-REX / ERC-3643).</p>
+            
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> No-Code RWA Smart Contract Deployment Wizard</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Chainlink Oracle Valuation & Title Deed Legal Verifications</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> On-Chain Transfer Restriction Rules & Investor Eligibility</li>
+            </ul>
+          </div>
+
+          <div style="position: relative;">
+            <div style="background: linear-gradient(135deg, rgba(245,158,11,0.2), transparent); padding: 4px; border-radius: 20px; border: 1px solid rgba(245,158,11,0.3); box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+              <img src="assets/dashboard/minting.jpg" alt="Asset Tokenization Engine" style="width: 100%; height: auto; border-radius: 16px; display: block;">
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 3: Image Left, Content Right -->
+        <div class="zigzag-module-row">
+          <div style="position: relative;">
+            <div style="background: linear-gradient(135deg, rgba(245,158,11,0.2), transparent); padding: 4px; border-radius: 20px; border: 1px solid rgba(245,158,11,0.3); box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+              <img src="assets/dashboard/orderbook.jpg" alt="Secondary Order Book" style="width: 100%; height: auto; border-radius: 16px; display: block;">
+            </div>
+          </div>
+
+          <div style="text-align: left;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #F5A623; letter-spacing: 1px; text-transform: uppercase; background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.25); padding: 4px 12px; border-radius: 9999px; display: inline-block; margin-bottom: 14px;"><i class="fa-solid fa-list-ol"></i> SECONDARY MARKET</span>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.85rem; color: #FFF; margin-bottom: 14px;">24/7 Secondary Market Liquidity & Order Book</h3>
+            <p style="color: #9CA3AF; font-size: 0.98rem; line-height: 1.6; margin-bottom: 20px;">Enable peer-to-peer liquidity for illiquid assets. Institutional investors can buy and sell fractional RWA shares instantly with transparent bid-ask depth and sub-second EVM transaction matching.</p>
+            
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Instant Trade Settlement with Zero Settlement Risk</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Automated Market Maker (AMM) & Order Book Hybrid Engine</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Complete On-Chain Audit Logging & Transaction Verification</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Module 4: Content Left, Image Right -->
+        <div class="zigzag-module-row">
+          <div style="text-align: left;">
+            <span style="font-size: 0.78rem; font-weight: 800; color: #F5A623; letter-spacing: 1px; text-transform: uppercase; background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.25); padding: 4px 12px; border-radius: 9999px; display: inline-block; margin-bottom: 14px;"><i class="fa-solid fa-brain"></i> AI RISK ANALYTICS</span>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 1.85rem; color: #FFF; margin-bottom: 14px;">AI Portfolio Intelligence & Risk Analytics</h3>
+            <p style="color: #9CA3AF; font-size: 0.98rem; line-height: 1.6; margin-bottom: 20px;">Leverage artificial intelligence to monitor portfolio health scores, evaluate regulatory risk heatmaps across global jurisdictions, and receive automated yield optimization recommendations.</p>
+            
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Institutional Risk Score Gauges & Credit Rating Assessment</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> AI-Driven Portfolio Rebalancing & Yield Forecast Alerts</li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 0.92rem; color: #FFF;"><i class="fa-solid fa-circle-check" style="color: #F59E0B; font-size: 1.1rem;"></i> Global Geographic & Asset Class Allocation Analytics</li>
+            </ul>
+          </div>
+
+          <div style="position: relative;">
+            <div style="background: linear-gradient(135deg, rgba(245,158,11,0.2), transparent); padding: 4px; border-radius: 20px; border: 1px solid rgba(245,158,11,0.3); box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
+              <img src="assets/dashboard/analytics.jpg" alt="AI Risk Analytics" style="width: 100%; height: auto; border-radius: 16px; display: block;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3-Second Core Value Proposition Cards -->
+  <section class="core-grid-section">
+    <div class="container">
+      <div class="core-grid">
+        <div class="core-card">
+          <div class="core-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>1. What Is This?</h3>
+          <p>An enterprise white-label software platform to fractionalize high-value real estate, energy, and equity into compliant digital tokens.</p>
+        </div>
+        <div class="core-card">
+          <div class="core-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <h3>2. How Do You Make Money?</h3>
+          <p>Collect token listing fees, secondary marketplace trading commissions, asset management fees, and SaaS subscriptions.</p>
+        </div>
+        <div class="core-card highlight-card">
+          <div class="core-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>3. Why Contact Virtua?</h3>
+          <p>Go live in just 10 days with enterprise-grade smart contracts, institutional security, and compliance-ready architecture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Revenue Opportunities (8 Revenue Streams) -->
+  <section class="features-summary-section" id="revenue">
+    <div class="container">
+      <div class="section-title">
+        <span>MULTIPLE INCOME CHANNELS</span>
+        <h2>One Platform. Multiple Revenue Streams.</h2>
+      </div>
+
+      <div class="summary-grid 8-grid">
+        <div class="s-card">
+          <i class="fa-solid fa-tags"></i>
+          <h4>Token Listing Fees</h4>
+          <p>Charge asset owners upfront fees to tokenize and list properties on your platform.</p>
+        </div>
+        <div class="s-card">
+          <i class="fa-solid fa-percent"></i>
+          <h4>Investor Transaction Fees</h4>
+          <p>Earn commissions on every primary token buy and sell transaction.</p>
+        </div>
+        <div class="s-card">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <h4>Marketplace Trading Fees</h4>
+          <p>Generate recurring revenue from secondary market peer-to-peer trades.</p>
+        </div>
+        <div class="s-card">
+          <i class="fa-solid fa-briefcase"></i>
+          <h4>Asset Management Fees</h4>
+          <p>Collect annual percentage fees for portfolio administration and yield distribution.</p>
+        </div>
+        <div class="s-card">
+          <i class="fa-solid fa-credit-card"></i>
+          <h4>Subscription Plans</h4>
+          <p>Recurring monthly software subscription plans for multi-asset issuers.</p>
+        </div>
+        <div class="s-card">
+          <i class="fa-solid fa-id-card"></i>
+          <h4>KYC & Verification Charges</h4>
+          <p>Premium onboarding and accredited investor verification service fees.</p>
+        </div>
+        <div class="s-card">
+          <i class="fa-solid fa-file-code"></i>
+          <h4>Smart Contract Deployment</h4>
+          <p>Offer custom compliant token minting as a high-margin premium service.</p>
+        </div>
+        <div class="s-card">
+          <i class="fa-solid fa-certificate"></i>
+          <h4>White Label Licensing</h4>
+          <p>License your platform infrastructure to third-party institutions and partners.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- What Can Be Tokenized Grid (12 High-Value Asset Categories) -->
+  <section class="tokenize-assets-section">
+    <div class="container">
+      <div class="section-title">
+        <span>ASSET COVERAGE</span>
+        <h2>What Can Be Tokenized?</h2>
+        <p class="section-desc">Our platform supports compliant tokenization across all major high-ticket asset classes.</p>
+      </div>
+
+      <div class="asset-grid-12">
+        <div class="ag-card"><i class="fa-solid fa-building"></i> <span>Commercial Real Estate</span></div>
+        <div class="ag-card"><i class="fa-solid fa-house"></i> <span>Residential Properties</span></div>
+        <div class="ag-card"><i class="fa-solid fa-hotel"></i> <span>Hotels & Resorts</span></div>
+        <div class="ag-card"><i class="fa-solid fa-solar-panel"></i> <span>Solar Projects</span></div>
+        <div class="ag-card"><i class="fa-solid fa-bolt"></i> <span>Renewable Energy</span></div>
+        <div class="ag-card"><i class="fa-solid fa-coins"></i> <span>Gold & Precious Metals</span></div>
+        <div class="ag-card"><i class="fa-solid fa-palette"></i> <span>Fine Art</span></div>
+        <div class="ag-card"><i class="fa-solid fa-tractor"></i> <span>Agriculture Assets</span></div>
+        <div class="ag-card"><i class="fa-solid fa-industry"></i> <span>Industrial Assets</span></div>
+        <div class="ag-card"><i class="fa-solid fa-ship"></i> <span>Logistics Infrastructure</span></div>
+        <div class="ag-card"><i class="fa-solid fa-chart-pie"></i> <span>Private Equity</span></div>
+        <div class="ag-card"><i class="fa-solid fa-landmark"></i> <span>Investment Funds</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Platform Features (9 Core Modules) -->
+  <section class="features-full-section" id="features">
+    <div class="container">
+      <div class="section-title">
+        <span>ENTERPRISE ARCHITECTURE</span>
+        <h2>Complete Platform Features</h2>
+      </div>
+
+      <div class="pf-grid">
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h4>Asset Tokenization Engine</h4>
+          <p>Convert physical assets into secure, regulatory-compliant digital tokens (ERC-3643 / ERC-1400).</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+          <h4>Investor Dashboard</h4>
+          <p>Allow investors to manage investments, track real-time portfolio performance, and monitor returns.</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h4>Fractional Ownership</h4>
+          <p>Lower minimum investment thresholds so investors can own fractions of high-ticket assets.</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-shop"></i></div>
+          <h4>Secondary Marketplace</h4>
+          <p>Enable 24/7 peer-to-peer liquidity for investors to Buy, Sell, Trade, and Transfer ownership units.</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>KYC & AML Verification</h4>
+          <p>Automated investor onboarding with institutional identity and accredited verification workflows.</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-code-commit"></i></div>
+          <h4>Smart Contract Automation</h4>
+          <p>Automate yield distribution, dividend payouts, and revenue-sharing logic error-free.</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-sliders"></i></div>
+          <h4>Admin Dashboard</h4>
+          <p>Manage assets, investors, transactions, compliance reports, and analytics from a centralized portal.</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-wallet"></i></div>
+          <h4>Wallet Integration</h4>
+          <p>Seamlessly connect MetaMask, WalletConnect, and secure enterprise Custodial Wallets.</p>
+        </div>
+        <div class="pf-card">
+          <div class="pf-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h4>Real-Time Analytics</h4>
+          <p>Track investment performance, platform revenue, investor demographics, and asset yields.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-section">
+    <div class="container">
+      <div class="why-box">
+        <span class="why-tag">THE VIRTUA ADVANTAGE</span>
+        <h2>We Don't Just Build Software. <br><span class="text-amber">We Build Revenue-Generating Tokenization Businesses.</span></h2>
+        
+        <div class="why-bullets">
+          <span><i class="fa-solid fa-check"></i> Business Strategy</span>
+          <span><i class="fa-solid fa-check"></i> Platform Development</span>
+          <span><i class="fa-solid fa-check"></i> Smart Contracts</span>
+          <span><i class="fa-solid fa-check"></i> Investor Experience</span>
+          <span><i class="fa-solid fa-check"></i> Security First</span>
+          <span><i class="fa-solid fa-check"></i> Scalable Architecture</span>
+          <span><i class="fa-solid fa-check"></i> Long-Term Support</span>
+        </div>
+
+        <button class="btn btn-pill-primary open-modal">
+          <span>Book a Strategy Call</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Imagine This... Transformation Story -->
+  <section class="imagine-section">
+    <div class="container">
+      <div class="section-title">
+        <span>BUSINESS TRANSFORMATION</span>
+        <h2>Imagine This...</h2>
+      </div>
+
+      <div class="imagine-grid">
+        <div class="ig-card">
+          <div class="ig-number">01</div>
+          <h4>From Single Buyer to Hundreds</h4>
+          <p>Instead of selling one property to one buyer, sell fractional ownership to hundreds of global investors simultaneously.</p>
+        </div>
+        <div class="ig-card">
+          <div class="ig-number">02</div>
+          <h4>From Months to Days</h4>
+          <p>Instead of waiting months for traditional financing, raise capital digitally in days via automated onboarding.</p>
+        </div>
+        <div class="ig-card">
+          <div class="ig-number">03</div>
+          <h4>From Bank Dependency to Ecosystem</h4>
+          <p>Instead of depending on restrictive bank loans, build your own self-sustaining investment ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Audience (Who Is This Platform For?) -->
+  <section class="audience-section">
+    <div class="container">
+      <div class="section-title">
+        <span>TARGET AUDIENCE</span>
+        <h2>Who Is This Platform For?</h2>
+      </div>
+
+      <div class="audience-chips">
+        <span class="a-chip"><i class="fa-solid fa-building-user"></i> Real Estate Developers</span>
+        <span class="a-chip"><i class="fa-solid fa-city"></i> Property Owners</span>
+        <span class="a-chip"><i class="fa-solid fa-landmark-flag"></i> Investment Companies</span>
+        <span class="a-chip"><i class="fa-solid fa-briefcase"></i> Asset Management Firms</span>
+        <span class="a-chip"><i class="fa-solid fa-hotel"></i> Hotels & Resorts</span>
+        <span class="a-chip"><i class="fa-solid fa-road"></i> Infrastructure Companies</span>
+        <span class="a-chip"><i class="fa-solid fa-sun"></i> Renewable Energy Businesses</span>
+        <span class="a-chip"><i class="fa-solid fa-sack-dollar"></i> Private Equity Firms</span>
+        <span class="a-chip"><i class="fa-solid fa-building-columns"></i> Government Projects</span>
+        <span class="a-chip"><i class="fa-solid fa-users-gear"></i> Family Offices</span>
+        <span class="a-chip"><i class="fa-solid fa-vault"></i> Financial Institutions</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Happens After You Contact Us? (6-Step Roadmap) -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="section-title">
+        <span>CLEAR LAUNCH ROADMAP</span>
+        <h2>What Happens After You Contact Us?</h2>
+      </div>
+
+      <div class="roadmap-grid">
+        <div class="rm-card">
+          <div class="rm-step">Step 1</div>
+          <h4>Free Business Consultation</h4>
+          <p>We analyze your asset portfolio and discuss your capital raising goals.</p>
+        </div>
+        <div class="rm-card">
+          <div class="rm-step">Step 2</div>
+          <h4>Revenue Model Planning</h4>
+          <p>Design custom fee structures, listing commissions, and yield workflows.</p>
+        </div>
+        <div class="rm-card">
+          <div class="rm-step">Step 3</div>
+          <h4>Platform Architecture</h4>
+          <p>Map out smart contracts, regulatory compliance, and system security.</p>
+        </div>
+        <div class="rm-card">
+          <div class="rm-step">Step 4</div>
+          <h4>Development Roadmap</h4>
+          <p>Agile 10-day to 8-week engineering phase with continuous milestone reviews.</p>
+        </div>
+        <div class="rm-card">
+          <div class="rm-step">Step 5</div>
+          <h4>Live Demo</h4>
+          <p>Test investor onboarding, token minting, and marketplace trading live.</p>
+        </div>
+        <div class="rm-card highlight">
+          <div class="rm-step">Step 6</div>
+          <h4>Launch Your Business</h4>
+          <p>Deploy to production and start raising capital from global investors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dual Marquee Trust Section (Centered Title + 2 Moving Lines) -->
+  <section class="trust-section">
+    <div class="container" style="margin-bottom: 32px; text-align: center;">
+      <div class="section-title text-center" style="margin-bottom: 0;">
+        <span style="font-size: 0.82rem; font-weight: 800; letter-spacing: 1.5px; color: var(--amber-primary); text-transform: uppercase;">ENTERPRISE TRUST</span>
+        <h2 style="font-size: 2.2rem; margin-top: 6px; color: #FFFFFF;">Trusted by Global Organizations & Government Bodies</h2>
+      </div>
+    </div>
+
+    <div class="trust-marquee-wrapper">
+      <!-- Line 1: Right-to-Left (RTL) -->
+      <div class="trust-marquee-track-rtl">
+        <div class="trust-logo-box"><img src="assets/trusted/disney.png?v=900000" alt="Walt Disney" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/woodside.png?v=900000" alt="Woodside Energy" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/nsw_health.png?v=900000" alt="NSW Health" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/smec.png?v=900000" alt="SMEC" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/curtin.png?v=900000" alt="Curtin University" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/iga.png?v=900000" alt="IGA Supermarket" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/xsights.png?v=900000" alt="xSights.io" class="t-img"></div>
+        
+        <!-- Duplicated for Seamless Infinite Scroll -->
+        <div class="trust-logo-box"><img src="assets/trusted/disney.png?v=900000" alt="Walt Disney" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/woodside.png?v=900000" alt="Woodside Energy" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/nsw_health.png?v=900000" alt="NSW Health" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/smec.png?v=900000" alt="SMEC" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/curtin.png?v=900000" alt="Curtin University" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/iga.png?v=900000" alt="IGA Supermarket" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/xsights.png?v=900000" alt="xSights.io" class="t-img"></div>
+      </div>
+
+      <!-- Line 2: Left-to-Right (LTR) -->
+      <div class="trust-marquee-track-ltr">
+        <div class="trust-logo-box"><img src="assets/trusted/walkmate.png?v=900000" alt="Walkmate" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/onefitstop.png?v=900000" alt="OneFitStop" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/gladstone_ports.png?v=900000" alt="Gladstone Ports" class="t-img img-lg"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/blacktown.png?v=900000" alt="Blacktown Council" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/extractas.png?v=900000" alt="Extractas Bioscience" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/nbn.png?v=900000" alt="NBN Co" class="t-img img-lg"></div>
+
+        <!-- Duplicated for Seamless Infinite Scroll -->
+        <div class="trust-logo-box"><img src="assets/trusted/walkmate.png?v=900000" alt="Walkmate" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/onefitstop.png?v=900000" alt="OneFitStop" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/gladstone_ports.png?v=900000" alt="Gladstone Ports" class="t-img img-lg"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/blacktown.png?v=900000" alt="Blacktown Council" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/extractas.png?v=900000" alt="Extractas Bioscience" class="t-img"></div>
+        <div class="trust-logo-box"><img src="assets/trusted/nbn.png?v=900000" alt="NBN Co" class="t-img img-lg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-title">
+        <span>FREQUENTLY ASKED QUESTIONS</span>
+        <h2>Got Questions? We Have Answers.</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does development take?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Typically 10 days to 8–16 weeks, depending on your platform complexity, customized smart contract rules, and required third-party integrations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can the platform support global investors?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. The platform is engineered to support international investors, multi-currency fiat & crypto settlement, and automated KYC/AML compliance workflows tuned to your target jurisdictions.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can we customize the platform?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. Every platform is built around your specific business model, white-label branding, revenue distribution strategy, and operational requirements.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Is the platform secure?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. We implement bank-grade security practices, third-party audited smart contracts, encrypted custodial wallet infrastructure, and multi-signature role-based access control.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Client Experiences (Testimonials Carousel) -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header-centered">
+        <span class="section-tag">CLIENT EXPERIENCES</span>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="quote-mark">“</div>
+          <p class="testi-text">
+            Most People don't start because they think they need more time, more money, or money certainty. Great experience overall. Virtua Technologies has delivered what I expected and more.
+          </p>
+          <div class="testi-author">
+            <div>
+              <strong>Varun Limaye</strong>
+              <span>Managing Director, Pinnacle Real Estate Capital</span>
+            </div>
+            <div class="author-logo"><i class="fa-solid fa-building-columns"></i></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="quote-mark">“</div>
+          <p class="testi-text">
+            We have hired Virtua Technologies for a number of successful projects, and they are currently developing another 3 for us. Have always found them easy to work with and delivering a professional result.
+          </p>
+          <div class="testi-author">
+            <div>
+              <strong>Christian</strong>
+              <span>Product Manager, Solar Energy Trust</span>
+            </div>
+            <div class="author-logo"><i class="fa-solid fa-solar-panel"></i></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="quote-mark">“</div>
+          <p class="testi-text">
+            One of the best development teams, 24/7 they will respond to our queries and solve it. We feel glad to tie up with this organization.
+          </p>
+          <div class="testi-author">
+            <div>
+              <strong>Ranees</strong>
+              <span>Private Equity Partner & Investor</span>
+            </div>
+            <div class="author-logo"><i class="fa-solid fa-landmark"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final-cta-section">
+    <div class="container">
+      <div class="final-cta-box">
+        <h2>The Future of Asset Investment Is Digital.</h2>
+        <p>Don't just own valuable assets. Build a platform that helps you unlock capital, attract investors, and create recurring revenue.</p>
+        
+        <div class="final-cta-buttons">
+          <button class="btn btn-pill-primary open-modal">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Book a Free Consultation</span>
+          </button>
+          <button class="btn btn-pill-secondary open-modal">
+            <i class="fa-solid fa-desktop"></i>
+            <span>Get a Live Demo</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Bottom Floating CTA Bar -->
+  <div class="sticky-cta-bar" id="sticky-bar">
+    <div class="container sticky-container">
+      <div class="sticky-text">
+        <strong>Ready to Tokenize Your High-Value Assets?</strong>
+        <span>Unlock global investors & create new revenue channels.</span>
+      </div>
+      <button class="btn btn-pill-primary open-modal">
+        <i class="fa-solid fa-calendar-check"></i>
+        <span>Book Free Strategy Call</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="#" class="brand-logo-exact footer-logo">
+        <img src="assets/standalone_logo.png?v=101010" alt="Virtua Logo Icon" class="user-exact-icon-img">
+        <div class="logo-text-exact">
+          <span class="logo-text-top">Virtua</span>
+          <span class="logo-text-bot">technologies</span>
+        </div>
+      </a>
+      
+      <p class="footer-desc">
+        Virtua Technologies delivers secure, scalable digital products that accelerate growth and transform ideas into measurable business outcomes.
+      </p>
+
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Refund policy</a>
+      </div>
+
+      <div class="footer-copyright">
+        &copy; 2026 Virtua Technologies. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Booking Dialog -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="modal-header">
+        <div class="modal-badge"><i class="fa-solid fa-calendar-check"></i> Strategy Session</div>
+        <h3>Book an RWA Strategy Call</h3>
+        <p>Speak directly with Virtua Technologies enterprise tokenization architects about your asset pipeline and platform monetization model.</p>
+      </div>
+
+      <form id="lead-form">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" required placeholder="e.g. Alexander Vance">
+        </div>
+        
+        <div class="form-group">
+          <label>Work Email *</label>
+          <input type="email" required placeholder="e.g. Vance@assetcapital.com">
+        </div>
+
+        <div class="form-group">
+          <label>Asset Class</label>
+          <select>
+            <option>Commercial Real Estate</option>
+            <option>Residential Portfolio</option>
+            <option>Renewable Energy / Solar</option>
+            <option>Private Equity / Funds</option>
+            <option>Hotels & Hospitality</option>
+            <option>Gold & Commodity</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-pill-primary btn-block">
+          <span>Confirm Booking Request</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="form-note"><i class="fa-solid fa-lock"></i> Confidentiality Guaranteed under NDA.</p>
+      </form>
+
+      <div class="modal-success" id="modal-success">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>Strategy Call Requested!</h3>
+        <p>We have received your details. A Virtua Technologies Senior Architect will reach out within 4 business hours to confirm your slot.</p>
+        <button class="btn btn-pill-nav" id="success-close">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=900000"></script>
+</body>
+</html>
