@@ -870,17 +870,25 @@
       <form id="lead-form">
         <div class="form-group">
           <label>Full Name *</label>
-          <input type="text" required placeholder="e.g. Alexander Vance">
+          <input type="text" id="lead-name" required placeholder="e.g. Alexander Vance">
         </div>
-        
+
         <div class="form-group">
           <label>Work Email *</label>
-          <input type="email" required placeholder="e.g. Vance@assetcapital.com">
+          <input type="email" id="lead-email" required placeholder="e.g. Vance@assetcapital.com">
+        </div>
+
+        <div class="form-group form-group-phone">
+          <label>Phone Number</label>
+          <div class="phone-input-row">
+            <input type="text" id="lead-country-code" class="phone-country-code" placeholder="+1" inputmode="tel" maxlength="5">
+            <input type="tel" id="lead-phone" placeholder="e.g. 9876543210" inputmode="tel">
+          </div>
         </div>
 
         <div class="form-group">
           <label>Asset Class</label>
-          <select>
+          <select id="lead-asset-class">
             <option>Commercial Real Estate</option>
             <option>Residential Portfolio</option>
             <option>Renewable Energy / Solar</option>
@@ -890,11 +898,12 @@
           </select>
         </div>
 
-        <button type="submit" class="btn btn-pill-primary btn-block">
+        <button type="submit" class="btn btn-pill-primary btn-block" id="lead-submit-btn">
           <span>Confirm Booking Request</span>
           <i class="fa-solid fa-arrow-right"></i>
         </button>
 
+        <p class="form-error" id="lead-form-error" style="display:none;"></p>
         <p class="form-note"><i class="fa-solid fa-lock"></i> Confidentiality Guaranteed under NDA.</p>
       </form>
 
