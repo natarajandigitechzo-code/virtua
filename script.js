@@ -87,6 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const leadForm = document.getElementById('lead-form');
   const modalSuccess = document.getElementById('modal-success');
 
+  // Tracks which CTA button opened the modal, so the lead submission can
+  // tell the CRM apart (e.g. "Live Demo" click vs "Strategy Call" click).
+  let activeCtaSource = 'Strategy Call';
+
   const openModal = () => {
     modalOverlay.classList.add('active');
   };
@@ -105,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   openModalBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
+      activeCtaSource = btn.dataset.ctaSource || btn.querySelector('span')?.textContent.trim() || 'CTA';
       openModal();
     });
   });
@@ -150,10 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+      const notesParts = [`Source: ${activeCtaSource}`];
+      if (assetClass) notesParts.push(`Asset Class: ${assetClass}`);
+
       const payload = {
         name,
         email,
-        notes: assetClass ? `Asset Class: ${assetClass}` : undefined,
+        notes: notesParts.join(' | '),
       };
       if (countryCode) payload.countryCode = countryCode;
       if (phoneNumber) payload.phoneNumber = phoneNumber;
