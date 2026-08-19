@@ -87,6 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const leadForm = document.getElementById('lead-form');
   const modalSuccess = document.getElementById('modal-success');
 
+  // Tracks which CTA button opened the modal, so the lead submission can
+  // tell the CRM apart (e.g. "Live Demo" click vs "Strategy Call" click).
+  let activeCtaSource = 'Strategy Call';
+
   const openModal = () => {
     modalOverlay.classList.add('active');
   };
@@ -105,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   openModalBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
+      activeCtaSource = btn.dataset.ctaSource || btn.querySelector('span')?.textContent.trim() || 'CTA';
       openModal();
     });
   });
@@ -118,12 +123,73 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Form Submit
+  // Form Submit — posts to our serverless proxy (/api/submit-lead), which
+  // holds the CRM API key server-side and forwards to Virtua Connect.
   if (leadForm) {
-    leadForm.addEventListener('submit', (e) => {
+    const submitBtn = document.getElementById('lead-submit-btn');
+    const errorEl = document.getElementById('lead-form-error');
+
+    const showError = (msg) => {
+      if (!errorEl) return;
+      errorEl.textContent = msg;
+      errorEl.style.display = 'block';
+    };
+    const clearError = () => {
+      if (!errorEl) return;
+      errorEl.style.display = 'none';
+      errorEl.textContent = '';
+    };
+
+    leadForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      leadForm.style.display = 'none';
-      modalSuccess.classList.add('active');
+      clearError();
+
+      const name = document.getElementById('lead-name')?.value.trim();
+      const email = document.getElementById('lead-email')?.value.trim();
+      const countryCode = document.getElementById('lead-country-code')?.value.trim();
+      const phoneNumber = document.getElementById('lead-phone')?.value.trim();
+      const assetClass = document.getElementById('lead-asset-class')?.value;
+
+      if (!name || !email) {
+        showError('Please fill in your name and work email.');
+        return;
+      }
+
+      const notesParts = [`Source: ${activeCtaSource}`];
+      if (assetClass) notesParts.push(`Asset Class: ${assetClass}`);
+
+      const payload = {
+        name,
+        email,
+        notes: notesParts.join(' | '),
+      };
+      if (countryCode) payload.countryCode = countryCode;
+      if (phoneNumber) payload.phoneNumber = phoneNumber;
+      if (countryCode && phoneNumber) payload.phone = `${countryCode}${phoneNumber}`;
+
+      submitBtn?.classList.add('is-loading');
+      if (submitBtn) submitBtn.disabled = true;
+
+      try {
+        const res = await fetch('/api/submit-lead', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        if (!res.ok) {
+          const errBody = await res.json().catch(() => ({}));
+          throw new Error(errBody.message || `Request failed (${res.status})`);
+        }
+
+        leadForm.style.display = 'none';
+        modalSuccess.classList.add('active');
+      } catch (err) {
+        showError(err.message || 'Something went wrong. Please try again.');
+      } finally {
+        submitBtn?.classList.remove('is-loading');
+        if (submitBtn) submitBtn.disabled = false;
+      }
     });
   }
 

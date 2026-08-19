@@ -42,7 +42,7 @@
         <a href="#faq" class="nav-link">FAQ</a>
       </div>
 
-      <button class="btn btn-pill-nav open-modal">
+      <button class="btn btn-pill-nav open-modal" data-cta-source="Nav Bar - Strategy Call">
         <span>Book a Free Strategy Call</span>
         <i class="fa-solid fa-arrow-up-right-from-square"></i>
       </button>
@@ -73,11 +73,11 @@
 
       <!-- Dual Hero CTAs -->
       <div class="hero-cta-group">
-        <button class="btn btn-pill-primary open-modal">
+        <button class="btn btn-pill-primary open-modal" data-cta-source="Hero - Strategy Call">
           <i class="fa-solid fa-calendar-check"></i>
           <span>Schedule a Free Strategy Call</span>
         </button>
-        <button class="btn btn-pill-secondary open-modal">
+        <button class="btn btn-pill-secondary open-modal" data-cta-source="Hero - Live Demo">
           <i class="fa-solid fa-circle-play"></i>
           <span>Request a Live Demo</span>
         </button>
@@ -534,7 +534,7 @@
           <span><i class="fa-solid fa-check"></i> Long-Term Support</span>
         </div>
 
-        <button class="btn btn-pill-primary open-modal">
+        <button class="btn btn-pill-primary open-modal" data-cta-source="Mid Page - Strategy Call">
           <span>Book a Strategy Call</span>
           <i class="fa-solid fa-arrow-right"></i>
         </button>
@@ -801,11 +801,11 @@
         <p>Don't just own valuable assets. Build a platform that helps you unlock capital, attract investors, and create recurring revenue.</p>
         
         <div class="final-cta-buttons">
-          <button class="btn btn-pill-primary open-modal">
+          <button class="btn btn-pill-primary open-modal" data-cta-source="Final CTA - Consultation">
             <i class="fa-solid fa-calendar-check"></i>
             <span>Book a Free Consultation</span>
           </button>
-          <button class="btn btn-pill-secondary open-modal">
+          <button class="btn btn-pill-secondary open-modal" data-cta-source="Final CTA - Live Demo">
             <i class="fa-solid fa-desktop"></i>
             <span>Get a Live Demo</span>
           </button>
@@ -821,7 +821,7 @@
         <strong>Ready to Tokenize Your High-Value Assets?</strong>
         <span>Unlock global investors & create new revenue channels.</span>
       </div>
-      <button class="btn btn-pill-primary open-modal">
+      <button class="btn btn-pill-primary open-modal" data-cta-source="Sticky Bar - Strategy Call">
         <i class="fa-solid fa-calendar-check"></i>
         <span>Book Free Strategy Call</span>
       </button>
@@ -870,17 +870,25 @@
       <form id="lead-form">
         <div class="form-group">
           <label>Full Name *</label>
-          <input type="text" required placeholder="e.g. Alexander Vance">
+          <input type="text" id="lead-name" required placeholder="e.g. Alexander Vance">
         </div>
-        
+
         <div class="form-group">
           <label>Work Email *</label>
-          <input type="email" required placeholder="e.g. Vance@assetcapital.com">
+          <input type="email" id="lead-email" required placeholder="e.g. Vance@assetcapital.com">
+        </div>
+
+        <div class="form-group form-group-phone">
+          <label>Phone Number</label>
+          <div class="phone-input-row">
+            <input type="text" id="lead-country-code" class="phone-country-code" placeholder="+1" inputmode="tel" maxlength="5">
+            <input type="tel" id="lead-phone" placeholder="e.g. 9876543210" inputmode="tel">
+          </div>
         </div>
 
         <div class="form-group">
           <label>Asset Class</label>
-          <select>
+          <select id="lead-asset-class">
             <option>Commercial Real Estate</option>
             <option>Residential Portfolio</option>
             <option>Renewable Energy / Solar</option>
@@ -890,11 +898,12 @@
           </select>
         </div>
 
-        <button type="submit" class="btn btn-pill-primary btn-block">
+        <button type="submit" class="btn btn-pill-primary btn-block" id="lead-submit-btn">
           <span>Confirm Booking Request</span>
           <i class="fa-solid fa-arrow-right"></i>
         </button>
 
+        <p class="form-error" id="lead-form-error" style="display:none;"></p>
         <p class="form-note"><i class="fa-solid fa-lock"></i> Confidentiality Guaranteed under NDA.</p>
       </form>
 
